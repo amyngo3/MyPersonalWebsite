@@ -1,0 +1,73 @@
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <%= image_tag ("c2e2.jpg"), :alt => "c2e2", :width => "460" , :height => "345" %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="welcome">Welcome!</h1>
+            <p>If you want to know more about me, click on a link above! This website is all about me!</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag ("photoshop.png"), :alt => "PhotoShop Certification", :width => "460" , :height => "345" %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="welcome">Photoshop Certification</h1>
+            <p>Certifications</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag ("allGames.png"), :alt => "All Games", :width => "460" , :height => "345" %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="welcome">Gallery</h1>
+            <p>Browse some of my art work!</p>
+            <p><a class="btn btn-lg btn-info" href="hobbies" role="button">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Education</h2>
+      <%= image_tag ("mather.jpg"), :alt => "Mather", :class => "img-circle" %>
+      <p>I enrolled in Mather high school. I plan to graduate and go to college.</p>
+      <p><a class="btn btn-primary" href="personal" role="button">View details &raquo;</a></p>
+    </div>
+    
+    <div class="col-md-4">
+      <h2>Hobbies</h2>
+      <%= image_tag ("newyear"), :alt => "Old New Year", :class => "img-circle" %>
+      <p>I draw many pictures from years ago. Even today, I improved my art skills and draw many characters.</p>
+      <p><a class="btn btn-primary" href="hobbies" role="button">View details &raquo;</a></p>
+   </div>
+   
+   <div class="col-md-4">
+      <h2>Sports</h2>
+      <%= image_tag ("tennis"), :alt => "Tennis", :class => "img-circle" %>
+      <p>I joined the Girl's Tennis team. In the summer, I go to practice with my teammates. In the fall, there are 
+      some games against other high schools.</p>
+      <p><a class="btn btn-primary" href="sports" role="button">View details &raquo;</a></p>
+    </div>
+  </div>
+</div>
