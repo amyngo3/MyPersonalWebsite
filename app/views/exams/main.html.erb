@@ -1,6 +1,53 @@
 <div class="container">
+  
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <%= image_tag ("c2e2.jpg"), :alt => "c2e2", :width => "460" , :height => "345" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="welcome">Welcome!</h1>
+          <p>If you want to know more about me, click on a link above! This website is all about me!</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag ("photoshop.png"), :alt => "PhotoShop Certification", :width => "460" , :height => "345" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="welcome">Photoshop Certification</h1>
+          <p>Certifications</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag ("allGames.png"), :alt => "All Games", :width => "460" , :height => "345" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="welcome">Gallery</h1>
+          <p>Browse some of my art work!</p>
+          <p><a class="btn btn-lg btn-info" href="hobbies" role="button">Browse gallery</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="icon-prev" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="icon-next" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  <!-- (Bootstrap 3 carousel code)
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1" class=""></li>
@@ -45,6 +92,7 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  -->
 
   <!-- Example row of columns -->
   <div class="row">
